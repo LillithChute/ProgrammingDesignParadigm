@@ -48,8 +48,8 @@ public class TrueFalse implements Question{
     if (!(o instanceof TrueFalse)) {
       return -1;
     }
-    TrueFalse q2 = (TrueFalse) (o);
-    return this.getText().compareTo(q2.getText());
+    TrueFalse question = (TrueFalse) (o);
+    return this.getText().compareTo(question.getText());
   }
 
   @Override
