@@ -128,4 +128,9 @@ public class MultipleSelect implements Question {
 
     return this.getText().compareTo(question.getText());
   }
+
+  @Override
+  public String toString() {
+    return "Multiple select question";
+  }
 }
