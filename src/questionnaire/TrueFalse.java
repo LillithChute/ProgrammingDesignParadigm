@@ -3,7 +3,7 @@ package questionnaire;
 /**
  * The type of question that can be answered only as "true" or "false".
  */
-public class TrueFalse implements Question{
+public class TrueFalse implements Question {
 
   private final String questionText;
   private final String answer;
@@ -41,7 +41,8 @@ public class TrueFalse implements Question{
     if (answer.equalsIgnoreCase(answer)) {
       return "Correct";
     }
-    return "Incorrect";  }
+    return "Incorrect";
+  }
 
   @Override
   public int compareTo(Question o) {
