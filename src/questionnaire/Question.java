@@ -3,19 +3,20 @@ package questionnaire;
 /**
  * This provides the operations to be used on a questionnaire.
  */
-public interface Question {
+public interface Question extends Comparable<Question> {
 
   /**
-   * Gets the text of a question.
+   * Get the text of the question.
    *
-   * @return The question.
+   * @return the text of the question.
    */
   String getText();
 
   /**
-   * Takes an answer and figures out of it is correct.
+   * Enter the answer and return whether it's correct or not.
    *
-   * @return Whether the answer is correct or not.
+   * @param answer the answer.
+   * @return "Correct" or "Incorrect".
    */
   String answer(String answer);
 }
