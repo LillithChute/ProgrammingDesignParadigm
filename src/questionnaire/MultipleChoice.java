@@ -78,19 +78,6 @@ public class MultipleChoice implements Question {
   }
 
   @Override
-  public int compareTo(Question o) {
-    if (o instanceof TrueFalse) {
-      return 1;
-    } else if (o instanceof Likert) {
-      return -1;
-    } else if (o instanceof MultipleSelect) {
-      return -1;
-    }
-    MultipleChoice question = (MultipleChoice) (o);
-    return this.getText().compareTo(question.getText());
-  }
-
-  @Override
   public String toString() {
     return "Multiple choice question";
   }

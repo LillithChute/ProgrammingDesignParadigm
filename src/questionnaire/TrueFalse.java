@@ -38,19 +38,10 @@ public class TrueFalse implements Question {
     if (answer == null) {
       return "Incorrect";
     }
-    if (answer.equalsIgnoreCase(answer)) {
+    if (this.answer.equalsIgnoreCase(answer)) {
       return "Correct";
     }
     return "Incorrect";
-  }
-
-  @Override
-  public int compareTo(Question o) {
-    if (!(o instanceof TrueFalse)) {
-      return -1;
-    }
-    TrueFalse question = (TrueFalse) (o);
-    return this.getText().compareTo(question.getText());
   }
 
   @Override

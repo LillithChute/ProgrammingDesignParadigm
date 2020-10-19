@@ -3,7 +3,7 @@ package questionnaire;
 /**
  * This provides the operations to be used on a questionnaire.
  */
-public interface Question extends Comparable<Question> {
+public interface Question {
 
   /**
    * Get the text of the question.
