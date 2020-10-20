@@ -1,4 +1,4 @@
-package questionnaire;
+package questions;
 
 import java.util.Collections;
 import java.util.HashSet;
@@ -75,6 +75,19 @@ public class MultipleChoice implements Question {
       return "Correct";
     }
     return "Incorrect";
+  }
+
+  @Override
+  public int compareTo(Question o) {
+    if (o instanceof TrueFalse) {
+      return 1;
+    } else if (o instanceof Likert) {
+      return -1;
+    } else if (o instanceof MultipleSelect) {
+      return -1;
+    }
+    MultipleChoice question = (MultipleChoice) (o);
+    return this.getText().compareTo(question.getText());
   }
 
   @Override

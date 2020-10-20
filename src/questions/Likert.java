@@ -1,4 +1,4 @@
-package questionnaire;
+package questions;
 
 import java.util.HashSet;
 
@@ -44,6 +44,15 @@ public class Likert implements Question {
       return "Incorrect";
     }
     return "Correct";
+  }
+
+  @Override
+  public int compareTo(Question o) {
+    if (!(o instanceof Likert)) {
+      return 1;
+    }
+    Likert q2 = (Likert) (o);
+    return this.getText().compareTo(q2.getText());
   }
 
   @Override

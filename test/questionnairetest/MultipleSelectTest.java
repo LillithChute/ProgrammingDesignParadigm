@@ -1,10 +1,10 @@
-package questionnaireTest;
+package questionnairetest;
 
 import org.junit.Before;
 import org.junit.Test;
 
-import questionnaire.MultipleSelect;
-import questionnaire.Question;
+import questions.MultipleSelect;
+import questions.Question;
 
 import static org.junit.Assert.assertEquals;
 

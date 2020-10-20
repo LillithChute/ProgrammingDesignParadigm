@@ -1,4 +1,4 @@
-package questionnaire;
+package questions;
 
 /**
  * The type of question that can be answered only as "true" or "false".
@@ -42,6 +42,15 @@ public class TrueFalse implements Question {
       return "Correct";
     }
     return "Incorrect";
+  }
+
+  @Override
+  public int compareTo(Question o) {
+    if (!(o instanceof TrueFalse)) {
+      return -1;
+    }
+    TrueFalse question = (TrueFalse) (o);
+    return this.getText().compareTo(question.getText());
   }
 
   @Override

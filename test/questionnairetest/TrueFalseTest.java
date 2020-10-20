@@ -1,11 +1,11 @@
-package questionnaireTest;
+package questionnairetest;
 
 import org.junit.Before;
 import org.junit.Test;
 
-import questionnaire.Likert;
-import questionnaire.Question;
-import questionnaire.TrueFalse;
+import questions.Likert;
+import questions.Question;
+import questions.TrueFalse;
 
 import static org.junit.Assert.assertEquals;
 

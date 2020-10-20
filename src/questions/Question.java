@@ -1,9 +1,9 @@
-package questionnaire;
+package questions;
 
 /**
  * This provides the operations to be used on a questionnaire.
  */
-public interface Question {
+public interface Question extends Comparable<Question> {
 
   /**
    * Get the text of the question.
